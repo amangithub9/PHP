@@ -84,7 +84,7 @@ echo "<br>";
 
 $name = "Aman Gupta";  // slicing u can return range of char value by using strsub(). specify the start idx and number of char u wnat to return. NOTE-> idx starts from 0.
 
-echo substr($name, 0, 5);   // substr(var, startIndex, removeAfterIdx) output-> (__an Gup)
+echo substr($name, 2, 5);   // substr(var, startIndex, removeAfterIdx) output-> (__an Gup)
 
 echo "<br>";
 
