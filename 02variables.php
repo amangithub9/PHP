@@ -66,7 +66,7 @@ echo "<p>Variables x inside function is : $x1</p>";
 echo "<br>";
 
 function myTest1(){
-    $y1 = 5;
+    $y1 = 5;  // Local
     
     echo "<p>Variables y1 inside function is: $y1</p>";
 }
