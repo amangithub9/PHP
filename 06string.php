@@ -56,6 +56,46 @@ $name3 = "HELLO WORLD!";
 $expo = explode(" ", $name3);  // explode => convert string into Array.
 
 print_r ($expo);
+echo "<br>";
+
+// *************************STRING CONCATINATION******************************************
+
+$firstName = "Aman";
+$lastName = "Gupta";
+
+echo $firstName . $lastName;  // this will cause no space in bettern first and last
+
+echo "<br>";
+
+$firstName = "Aman";
+$lastName = "Gupta";
+
+echo $firstName . " " . $lastName;  // this will manage everything
+
+echo "<br>";
+ 
+$firstName = "Aman";
+$lastName = "Gupta";
+
+echo "$firstName $lastName";  // this is shortcut method to concat string.
+echo "<br>";
+
+// ********************PHP - Slicing Strings*********************
+
+$name = "Aman Gupta";  // slicing u can return range of char value by using strsub(). specify the start idx and number of char u wnat to return. NOTE-> idx starts from 0.
+
+echo substr($name, 0, 5);   // substr(var, startIndex, removeAfterIdx) output-> (__an Gup)
+
+echo "<br>";
+
+
+// **********Slice to the End***********
+$name = "Aman Gupta";  //By leaving out the length parameter, the range will go to the end:
+
+echo substr($name, 6);   // Start the slice at index 6 and go all the way to the end: substr(var, removeIdx) output-> (______upta)
+
+echo "<br>";
+
 
 ?>
 
