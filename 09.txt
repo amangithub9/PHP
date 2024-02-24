@@ -1,0 +1,47 @@
+<?php
+
+echo "This is a function and we are going to learn functions in PHP today! <br>";
+
+function marks($totalMarks){
+    $sum = 0;
+
+    foreach ($totalMarks as $val) {
+        $sum += $val;
+    }
+    return $sum;
+}
+echo "<br>";
+
+function percentage($totalMarks){
+    $totalSubjects = count($totalMarks);
+    $totalMarksObtained = marks($totalMarks);
+    $totalPossibleMarks = $totalSubjects * 100; // Assuming each subject has a maximum of 100 marks
+    return ($totalMarksObtained / $totalPossibleMarks) * 100;
+}
+
+$aman = [98,88,96,89,91,92];
+$total = marks($aman);
+$percentage = percentage($aman);
+
+echo "Total marks of Aman is: $total <br>";
+echo "Percentage of Aman is: $percentage% <br>";
+
+echo "<br>";
+
+$ayush = [95,99,56,66,89,83];
+$total = marks($ayush);
+$percentage = percentage($ayush);
+
+echo "Total marks of Ayush is: $total <br>";
+echo "Percentage of Ayush is: $percentage% <br>";
+
+echo "<br>";
+
+$suj = [99,98,97,96,95,94];
+$total = marks($suj);
+$percentage = percentage($suj);
+
+echo "Total marks of Suj is: $total <br>";
+echo "Percentage of Suj is: $percentage%";
+
+?>
