@@ -200,8 +200,60 @@ $gaadi = $gaadi + [
 
 print_r($gaadi);
 
+echo "<br>";
+echo "<br>";
+
 //  REMOVE ARRAYS ITEMS
 
+$car = [
+    "Volvo", 
+    "BMW",
+    "Tata",
+    "Toyota",
+    "Audi",
+    "VW"  
+];  //Remove Array Item
+
+array_splice($car, 0, 2); // (var, index where u start, items count u want to be deleted)/ two items will remove.
+print_r($car); //
+
+// USING THE UNSET FUNCTION => unset()
+//Note: The unset() function does not re-arrange the indexes, meaning that after deletion the array will no longer contain the missing indexes.
+
+
+echo "<br>";
+echo "<br>";
+
+$car = [
+    "Volvo", 
+    "BMW",
+    "Tata",
+    "Toyota",
+    "Audi",
+    "VW"  
+];
+unset($car[1]);
+// unset($car[2] , $car[3]);
+// unset($car[3]);
+// unset($car[4]);
+print_r($car);
+
+
+echo "<br>";
+echo "<br>";
+// Remove Item From an Associative Array
+
+$car =[
+    'Brand' => "Ford",
+    "Model" => "Mustang",
+    "color" => "gray",
+    "Year" => "2015"
+];
+
+unset($car["model"]);
+// unset($car["model"], $car["Year"]);
+
+print_r($car); // var_dump();
 
 
 ?>
