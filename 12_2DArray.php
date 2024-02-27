@@ -146,4 +146,5 @@ foreach ($transposedMatrix as $row) {
     }
     echo "<br>";
 }
+echo "<br>";
 ?>
