@@ -170,7 +170,31 @@ $a2=array(0=>"orange",3=>"burgundy");
 print_r(array_replace($a1,$a2));
 echo "</pre>";
 
+echo "<br>";
 
+// ******** array_pop() and array_push() function .
+
+$fruits = ["kela", "santara", "seb", "angoor"];
+
+array_pop($fruits); // using array_pop() remove last element from the array.
+
+echo "<pre>";
+print_r($fruits);
+echo "</pre>";
+
+echo "<br>";
+
+$cricketPlayer = ["Virat Kohli", "MS Dhoni", "Shubhman Gill"];
+
+echo "<br>";
+
+$fruits = ["kela", "santara", "seb", "angoor"];
+
+array_push($fruits, "Papita", "Lichi"); // using array_push() add elements in current array u can add multiple elements at one time using this function.
+
+echo "<pre>";
+print_r($fruits);
+echo "</pre>";
 
 
 
