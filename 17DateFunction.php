@@ -25,7 +25,7 @@ echo "Days start from Sunday " . date("w") . "<br>";  // week start from sunday 
 echo "Days start from Sunday " . date("N") . "<br>"; // week day number 1
 echo "Today is " . date("d-F-Y") . "<br>";
 echo "Week day is " . date("D") . "<br>"; //week day Mon
-echo "Week day is " . date("l") . "<br>"; // week day Monday
+echo "Week day is " . date("l") . "<br>"; // current day Monday
 echo "Day of year " . date("z") . "<br>"; // current day in 365 days
 echo "Week day is " . date("W") . "<br>"; // current week of the year
 echo "Days of the month " . date("t") . "<br>"; // total day in current month
